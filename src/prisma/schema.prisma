@@ -1,0 +1,297 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String         @id @default(uuid())
+  email        String         @unique
+  password     String
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @default(now()) @updatedAt
+  subscriptionTier SubscriptionTier @default(FREE)
+
+  priceHistory PriceHistory[]
+  plans        UserPlan[]
+
+  profile    Profile?    @relation("UserProfile")
+  onboarding Onboarding?
+
+  // Back-relations
+  progress             Progress[]
+  mealPlans            MealPlan[]
+  groceryLists         GroceryList[]
+  notifications        Notification[]
+  coachMessages        CoachMessage[]
+  analyzerResults      AnalyzerResult[]
+  foodLogs             FoodLog[]
+  dailySummaries       DailySummary[]
+  groceryOptimizations GroceryOptimization[]
+  weeklyPriceSnapshots WeeklyPriceSnapshot[]
+  weeklyGrocerySnapshots WeeklyGrocerySnapshot[]
+
+
+}
+
+model Onboarding {
+  id     String @id @default(uuid())
+  userId String @unique
+
+  // Physical stats
+  age           Int?
+  gender        String? // male | female | other
+  height        Int? // centimeters
+  weight        Int? // kilograms
+  goal          String? // weight_loss | maintain | weight_gain
+  activityLevel String? // sedentary | light | moderate | active | very_active
+
+  // Nutrition & lifestyle
+  dietaryPreferences String[] // vegan, vegetarian, halal, gluten_free, etc.
+  allergies          String[] // peanuts, lactose, etc.
+  budget             Int?
+  country            String?
+
+  // Unit preferences (NEW)
+  preferredSystem     String? @default("metric") // metric | imperial
+  preferredWeightUnit String? // g | oz | lb
+  preferredVolumeUnit String? // ml | cup | tbsp | tsp
+
+  // Legacy field (misc usage)
+  preferences String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id])
+}
+
+model Profile {
+  id String @id @default(uuid())
+
+  // 🔒 STATE OWNER LINK
+  user   User   @relation("UserProfile", fields: [userId], references: [id])
+  userId String @unique
+
+  // BODY
+  age    Int?
+  height Int?
+  weight Int?
+  gender String?
+
+  // GOAL
+  goal String?
+
+  // LIFESTYLE
+  activityLevel   String?
+  trainsRegularly Boolean? @default(false)
+  bodyType        String?
+
+  // CONSTRAINTS
+  diet      String?
+  allergies String[] @default([])
+
+  // MONEY
+  weeklyBudget Int?
+  currency     String? @default("EUR")
+  country      String?
+
+    stepsPerDay        Int?    // optional, user-reported
+  gymDaysPerWeek     Int?    // 0–7
+  trainingIntensity  String? // low | moderate | high
+
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime? @updatedAt
+
+}
+
+model Progress {
+  id     String   @id @default(uuid())
+  userId String
+  date   DateTime @default(now())
+  weight Float?
+  user   User     @relation(fields: [userId], references: [id])
+}
+
+model MealPlan {
+  id        String   @id @default(uuid())
+  userId    String
+  date      DateTime @default(now())
+  meals     Json?
+  createdAt DateTime @default(now())
+  isValid   Boolean  @default(true)
+  user      User     @relation(fields: [userId], references: [id])
+}
+
+model GroceryList {
+  id        String   @id @default(uuid())
+  userId    String
+  items     Json?
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id])
+}
+
+model Notification {
+  id        String   @id @default(uuid())
+  userId    String
+  title     String?
+  message   String
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id])
+}
+
+model CoachMessage {
+  id        String   @id @default(uuid())
+  userId    String
+  message   String
+  question  String?
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id])
+}
+
+model AnalyzerResult {
+  id        String   @id @default(uuid())
+  userId    String
+  inputType String?
+  result    Json?
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id])
+}
+
+model FoodLog {
+  id     String @id @default(uuid())
+  userId String
+
+  // Normalized day (00:00 of that date)
+  date DateTime
+
+  // Meal slot
+  meal String? // breakfast | lunch | dinner | snack
+
+  // Source of the log
+  source String @default("manual") // manual | plan | scanner
+
+  // If logged from a meal template
+  templateId String?
+
+  // Display name
+  name String
+
+  // Authoritative nutrition values
+  grams    Float
+  calories Float
+  protein  Float
+  carbs    Float
+  fat      Float
+
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id])
+
+  @@index([userId, date])
+}
+
+model DailySummary {
+  id        String   @id @default(uuid())
+  userId    String
+  summary   Json?
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id])
+}
+
+model GroceryOptimization {
+  id        String   @id @default(uuid())
+  userId    String
+  country   String?
+  currency  String?
+  totalCost Float
+  source    String   @default("ai-grocery")
+  items     Json
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id])
+}
+
+model PriceHistory {
+  id            String   @id @default(uuid())
+  userId        String
+  itemName      String
+  pricePerUnit  Float
+  quantity      Float
+  estimatedCost Float
+  countryCode   String
+  currency      String
+  createdAt     DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id])
+}
+
+model UserPlan {
+  id        String     @id @default(uuid())
+  userId    String
+  weekStart DateTime
+  weekEnd   DateTime
+  status    PlanStatus @default(ACTIVE)
+
+  metricsJson    Json
+  strategyJson   Json
+  planJson       Json
+  inputsSnapshot Json?
+  changeReasons Json?
+
+
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id])
+}
+
+// ----------------------------------------------------
+// PHASE 9.2 — Weekly price snapshot (frozen prices)
+// ----------------------------------------------------
+model WeeklyPriceSnapshot {
+  id        String   @id @default(uuid())
+  userId    String
+  weekKey   String
+
+  currency  String
+  totalCost Float
+
+  snapshot  Json
+
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, weekKey])
+}
+
+// ----------------------------------------------------
+// PHASE 9.3.2 — Weekly grocery snapshot (frozen input)
+// ----------------------------------------------------
+model WeeklyGrocerySnapshot {
+  id        String   @id @default(uuid())
+  userId    String
+  weekKey   String
+
+  snapshot  Json
+
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, weekKey])
+}
+
+enum PlanStatus {
+  ACTIVE
+  COMPLETED
+}
+
+enum SubscriptionTier {
+  FREE
+  PRO
+}

@@ -1,0 +1,41 @@
+{
+  "ts-node": {
+    "transpileOnly": false,
+    "files": true,
+    "compilerOptions": {
+      "noEmit": false
+    }
+  },
+
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2021",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    
+    "strict": false,
+    "skipLibCheck": true,
+    
+    "removeComments": true,
+    "sourceMap": true,
+
+    "rootDir": ".",
+    "outDir": "./dist",
+
+    "baseUrl": "./src",
+    "incremental": true
+  },
+
+  "include": ["src/**/*"],
+  "exclude": [
+  "node_modules",
+  "dist",
+  "_test",
+  "src/_coach_old",
+  "src/_notifications_old",
+  "src/_progress_old"
+]
+
+}

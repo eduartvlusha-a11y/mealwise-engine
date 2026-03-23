@@ -1,0 +1,91 @@
+{
+  "userProfile": {
+    "age": 35,
+    "gender": "male",
+    "heightCm": 178,
+    "weightKg": 82,
+    "activityLevel": "moderate",
+    "goal": "fat_loss",
+    "diet": "balanced",
+    "allergies": ["peanuts"],
+    "weeklyBudget": 80,
+    "currency": "EUR"
+  },
+
+  "metrics": {
+    "bmr": 1750,
+    "tdee": 2600,
+    "dailyCaloriesTarget": 2100,
+    "dailyProteinTarget": 140,
+    "weeklyCaloriesTarget": 14700,
+    "weeklyBudget": 80
+  },
+
+  "strategy": {
+    "mealStructure": 3,
+    "macroEmphasis": "protein",
+    "foodStrategy": "budget_simple"
+  },
+
+  "weeklyPlan": {
+    "weekStart": "2025-01-01",
+    "weekEnd": "2025-01-07",
+    "mealsPerDay": 3,
+    "days": [
+      { "day": "Monday", "meals": ["Egg omelet", "Chicken rice", "Yogurt"] },
+      { "day": "Tuesday", "meals": ["Oats", "Lentil stew", "Eggs"] },
+      { "day": "Wednesday", "meals": ["Egg omelet", "Chicken rice", "Fruit"] },
+      { "day": "Thursday", "meals": ["Oats", "Tuna pasta", "Yogurt"] },
+      { "day": "Friday", "meals": ["Egg omelet", "Chicken rice", "Fruit"] },
+      { "day": "Saturday", "meals": ["Oats", "Lentil stew", "Eggs"] },
+      { "day": "Sunday", "meals": ["Egg omelet", "Chicken rice", "Yogurt"] }
+    ]
+  },
+
+  "groceries": {
+    "estimatedCost": 92,
+    "items": [
+      { "name": "Eggs", "quantity": "24 pcs", "category": "protein" },
+      { "name": "Chicken breast", "quantity": "2.5 kg", "category": "protein" },
+      { "name": "Rice", "quantity": "2 kg", "category": "carb" },
+      { "name": "Oats", "quantity": "1.5 kg", "category": "carb" },
+      { "name": "Lentils", "quantity": "1 kg", "category": "protein" },
+      { "name": "Yogurt", "quantity": "1.5 kg", "category": "protein" }
+    ]
+  },
+
+  "budgetPressure": {
+    "weeklyBudget": 80,
+    "estimatedCost": 92,
+    "status": "OVER",
+    "delta": 12
+  },
+
+  "substitutions": [
+    {
+      "originalItem": "Chicken breast",
+      "substitutedItem": "Eggs",
+      "reason": "BUDGET",
+      "explanation": "Chicken breast was replaced with eggs to reduce weekly cost."
+    }
+  ],
+
+  "weeklyOutcomeSummary": {
+    "budget": {
+      "target": 80,
+      "estimatedCost": 78,
+      "status": "WITHIN",
+      "delta": -2
+    },
+    "substitutions": {
+      "count": 1,
+      "reasons": [
+        "Chicken breast was replaced with eggs to reduce weekly cost."
+      ]
+    },
+    "summary": {
+      "verdict": "SUCCESS",
+      "explanation": "The weekly plan stayed within the budget. One substitution was applied due to cost pressure. Estimated spend was €78 against a €80 target."
+    }
+  }
+}

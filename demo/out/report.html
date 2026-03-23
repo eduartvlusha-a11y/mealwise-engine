@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>MealWise — Goal Execution Report</title>
+<style>
+body{font-family:system-ui;padding:24px;max-width:1200px;margin:auto;}
+h1{margin-bottom:4px;}
+.muted{color:#666;font-size:12px;}
+table{width:100%;border-collapse:collapse;margin-top:20px;}
+th,td{border-bottom:1px solid #e6e6e6;padding:12px;text-align:left;vertical-align:top;}
+th{background:#fafafa;text-transform:uppercase;font-size:12px;color:#444;}
+</style>
+</head>
+<body>
+
+<h1>MealWise — Goal Execution Proof</h1>
+<div class="muted">Generated 2025-12-24T10:38:40.897Z • 3 scenarios</div>
+<p class="muted">
+  This report demonstrates how MealWise executes a single user’s nutrition goals under real-world constraints.
+  Household and multi-user planning are part of the product roadmap and are not shown here.
+</p>
+
+<p>
+<strong>MealWise</strong> is a goal-driven nutrition execution engine.
+It enforces physiological targets first, preserves meal structure,
+derives groceries automatically, and validates feasibility against money last.
+</p>
+
+<table>
+<thead>
+<tr>
+  <th>Scenario</th>
+  <th>Goal Execution</th>
+  <th>Meal Structure</th>
+  <th>Grocery Logic</th>
+  <th>Cost Reality</th>
+  <th>Risk Flags</th>
+  <th>Conflicts</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+  <td>
+    <strong>Low Budget Single (Survival Mode)</strong>
+    <div class="muted">low_budget_single</div>
+  </td>
+<div class="muted" style="margin-top:6px">
+  
+      <div><strong>Strategy Advisor (Pre-Plan)</strong></div>
+      <div>Plan structured to meet 2633 kcal/day and 120 g protein with 3 meals per day.</div>
+      <ul>
+        <li>Calories target enforced via deterministic engine.</li><li>Protein target enforced to support goal.</li><li>Meal structure fixed before grocery derivation.</li><li>Groceries derived strictly from planned meals.</li><li>Budget checked last: 25 EUR/week.</li>
+      </ul>
+    
+</div>
+
+
+
+  <td>
+  Calories: 2633
+  → 1740 kcal<br/>
+
+  Protein: 120
+  → 102 g<br/>
+
+  <span class="muted">
+    Δ Calories:
+    -893 kcal<br/>
+
+    Δ Protein:
+    -18 g
+  </span>
+</td>
+
+
+
+
+
+
+  <td>
+  28 meals / week<br/>
+  3 meals / day<br/>
+  Execution adapted to goal & constraints
+</td>
+
+
+  <td>
+  Grocery list derived from meals<br/>
+  1 adaptive substitutions
+</td>
+
+
+  <td>
+    €17.55 required<br/>
+    Feasible within €25.00 budget
+  </td>
+
+  <td>LOW_BUDGET</td>
+  <td>Your budget is tight for diverse meals.</td>
+</tr>
+
+<tr>
+  <td>
+    <strong>Athlete Cut (High Protein, Calorie Deficit)</strong>
+    <div class="muted">athlete_cut</div>
+  </td>
+<div class="muted" style="margin-top:6px">
+  
+      <div><strong>Strategy Advisor (Pre-Plan)</strong></div>
+      <div>Plan structured to meet 2106 kcal/day and 165 g protein with 4 meals per day.</div>
+      <ul>
+        <li>Calories target enforced via deterministic engine.</li><li>Protein target enforced to support goal.</li><li>Meal structure fixed before grocery derivation.</li><li>Groceries derived strictly from planned meals.</li><li>Budget checked last: 60 EUR/week.</li>
+      </ul>
+    
+</div>
+
+
+
+  <td>
+  Calories: 2106
+  → 1738 kcal<br/>
+
+  Protein: 165
+  → 102 g<br/>
+
+  <span class="muted">
+    Δ Calories:
+    -368 kcal<br/>
+
+    Δ Protein:
+    -63 g
+  </span>
+</td>
+
+
+
+
+
+
+  <td>
+  28 meals / week<br/>
+  4 meals / day<br/>
+  Execution adapted to goal & constraints
+</td>
+
+
+  <td>
+  Grocery list derived from meals<br/>
+  0 adaptive substitutions
+</td>
+
+
+  <td>
+    €15.10 required<br/>
+    Feasible within €60.00 budget
+  </td>
+
+  <td>—</td>
+  <td>—</td>
+</tr>
+
+<tr>
+  <td>
+    <strong>Diabetic Control (Low Sugar, Stable Energy)</strong>
+    <div class="muted">diabetic_control</div>
+  </td>
+<div class="muted" style="margin-top:6px">
+  
+      <div><strong>Strategy Advisor (Pre-Plan)</strong></div>
+      <div>Plan structured to meet 2633 kcal/day and 120 g protein with 3 meals per day.</div>
+      <ul>
+        <li>Calories target enforced via deterministic engine.</li><li>Protein target enforced to support goal.</li><li>Meal structure fixed before grocery derivation.</li><li>Groceries derived strictly from planned meals.</li><li>Budget checked last: 50 EUR/week.</li>
+      </ul>
+    
+</div>
+
+
+
+  <td>
+  Calories: 2633
+  → 1746 kcal<br/>
+
+  Protein: 120
+  → 108 g<br/>
+
+  <span class="muted">
+    Δ Calories:
+    -887 kcal<br/>
+
+    Δ Protein:
+    -12 g
+  </span>
+</td>
+
+
+
+
+
+
+  <td>
+  28 meals / week<br/>
+  3 meals / day<br/>
+  Execution adapted to goal & constraints
+</td>
+
+
+  <td>
+  Grocery list derived from meals<br/>
+  0 adaptive substitutions
+</td>
+
+
+  <td>
+    €16.90 required<br/>
+    Feasible within €50.00 budget
+  </td>
+
+  <td>—</td>
+  <td>—</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>

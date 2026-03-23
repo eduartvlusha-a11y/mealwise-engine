@@ -1,0 +1,2035 @@
+{
+  "weekPlan": {
+    "weekStart": "2025-12-21",
+    "weekEnd": "2025-12-28",
+    "totalCaloriesTarget": 18431,
+    "totalCaloriesPlanned": 0,
+    "avgDailyCaloriesTarget": 2633,
+    "avgDailyCaloriesPlanned": 0,
+    "macrosTargetWeekly": {
+      "protein": 840,
+      "carbs": 1841,
+      "fats": 616
+    },
+    "macrosPlannedWeekly": {
+      "protein": 0,
+      "carbs": 0,
+      "fats": 0
+    },
+    "days": [
+      {
+        "date": "2025-12-21",
+        "plan": {
+          "date": "2025-12-21",
+          "totalCaloriesTarget": 2633,
+          "totalCaloriesPlanned": 0,
+          "macrosTarget": {
+            "protein": 120,
+            "carbs": 263,
+            "fats": 88
+          },
+          "macrosPlanned": {
+            "protein": 0,
+            "carbs": 0,
+            "fats": 0
+          },
+          "meals": [
+            {
+              "templateId": "bf_yogurt_honey",
+              "name": "Greek yogurt with honey and oats",
+              "category": "breakfast",
+              "grams": 564,
+              "calories": 396,
+              "protein": 22,
+              "carbs": 50,
+              "fats": 12,
+              "explanation": "Chosen for calorie balanced and good energy to start the day."
+            },
+            {
+              "templateId": "ln_chicken_rice",
+              "name": "Grilled chicken with brown rice and broccoli",
+              "category": "lunch",
+              "grams": 754,
+              "calories": 506,
+              "protein": 40,
+              "carbs": 55,
+              "fats": 14,
+              "explanation": "Chosen for high protein and calorie balanced."
+            },
+            {
+              "templateId": "dn_chicken_pasta",
+              "name": "Chicken pasta with tomato sauce",
+              "category": "dinner",
+              "grams": 478,
+              "calories": 584,
+              "protein": 35,
+              "carbs": 75,
+              "fats": 16,
+              "explanation": "Chosen for high protein and supports recovery without overeating."
+            },
+            {
+              "templateId": "sn_yogurt_nuts",
+              "name": "Greek yogurt with nuts and berries",
+              "category": "snack",
+              "grams": 176,
+              "calories": 288,
+              "protein": 20,
+              "carbs": 25,
+              "fats": 12,
+              "explanation": "Chosen for calorie balanced and smart snack choice."
+            }
+          ]
+        }
+      },
+      {
+        "date": "2025-12-22",
+        "plan": {
+          "date": "2025-12-22",
+          "totalCaloriesTarget": 2633,
+          "totalCaloriesPlanned": 0,
+          "macrosTarget": {
+            "protein": 120,
+            "carbs": 263,
+            "fats": 88
+          },
+          "macrosPlanned": {
+            "protein": 0,
+            "carbs": 0,
+            "fats": 0
+          },
+          "meals": [
+            {
+              "templateId": "bf_oats_banana",
+              "name": "Oatmeal with banana and almonds",
+              "category": "breakfast",
+              "grams": 614,
+              "calories": 435,
+              "protein": 15,
+              "carbs": 60,
+              "fats": 15,
+              "explanation": "Chosen for calorie balanced and good energy to start the day."
+            },
+            {
+              "templateId": "ln_tuna_salad",
+              "name": "Tuna salad with beans and veggies",
+              "category": "lunch",
+              "grams": 744,
+              "calories": 494,
+              "protein": 38,
+              "carbs": 45,
+              "fats": 18,
+              "explanation": "Chosen for high protein and calorie balanced."
+            },
+            {
+              "templateId": "dn_salmon_potato",
+              "name": "Baked salmon with potatoes and green beans",
+              "category": "dinner",
+              "grams": 494,
+              "calories": 550,
+              "protein": 38,
+              "carbs": 50,
+              "fats": 22,
+              "explanation": "Chosen for high protein and calorie balanced."
+            },
+            {
+              "templateId": "sn_apple_peanut",
+              "name": "Apple with peanut butter",
+              "category": "snack",
+              "grams": 182,
+              "calories": 256,
+              "protein": 7,
+              "carbs": 30,
+              "fats": 12,
+              "explanation": "Chosen for calorie balanced and smart snack choice."
+            }
+          ]
+        }
+      },
+      {
+        "date": "2025-12-23",
+        "plan": {
+          "date": "2025-12-23",
+          "totalCaloriesTarget": 2633,
+          "totalCaloriesPlanned": 0,
+          "macrosTarget": {
+            "protein": 120,
+            "carbs": 263,
+            "fats": 88
+          },
+          "macrosPlanned": {
+            "protein": 0,
+            "carbs": 0,
+            "fats": 0
+          },
+          "meals": [
+            {
+              "templateId": "bf_peanut_toast",
+              "name": "Peanut butter toast with banana",
+              "category": "breakfast",
+              "grams": 446,
+              "calories": 426,
+              "protein": 18,
+              "carbs": 48,
+              "fats": 18,
+              "explanation": "Chosen for calorie balanced and good energy to start the day."
+            },
+            {
+              "templateId": "ln_lentil_bowl",
+              "name": "Lentil and vegetable bowl",
+              "category": "lunch",
+              "grams": 768,
+              "calories": 434,
+              "protein": 26,
+              "carbs": 60,
+              "fats": 10,
+              "explanation": "Chosen for high protein and calorie balanced."
+            },
+            {
+              "templateId": "dn_chicken_pasta",
+              "name": "Chicken pasta with tomato sauce",
+              "category": "dinner",
+              "grams": 478,
+              "calories": 584,
+              "protein": 35,
+              "carbs": 75,
+              "fats": 16,
+              "explanation": "Chosen for high protein and supports recovery without overeating."
+            },
+            {
+              "templateId": "sn_yogurt_nuts",
+              "name": "Greek yogurt with nuts and berries",
+              "category": "snack",
+              "grams": 176,
+              "calories": 288,
+              "protein": 20,
+              "carbs": 25,
+              "fats": 12,
+              "explanation": "Chosen for calorie balanced and smart snack choice."
+            }
+          ]
+        }
+      },
+      {
+        "date": "2025-12-24",
+        "plan": {
+          "date": "2025-12-24",
+          "totalCaloriesTarget": 2633,
+          "totalCaloriesPlanned": 0,
+          "macrosTarget": {
+            "protein": 120,
+            "carbs": 263,
+            "fats": 88
+          },
+          "macrosPlanned": {
+            "protein": 0,
+            "carbs": 0,
+            "fats": 0
+          },
+          "meals": [
+            {
+              "templateId": "bf_yogurt_honey",
+              "name": "Greek yogurt with honey and oats",
+              "category": "breakfast",
+              "grams": 564,
+              "calories": 396,
+              "protein": 22,
+              "carbs": 50,
+              "fats": 12,
+              "explanation": "Chosen for calorie balanced and good energy to start the day."
+            },
+            {
+              "templateId": "ln_tuna_salad",
+              "name": "Tuna salad with beans and veggies",
+              "category": "lunch",
+              "grams": 744,
+              "calories": 494,
+              "protein": 38,
+              "carbs": 45,
+              "fats": 18,
+              "explanation": "Chosen for high protein and calorie balanced."
+            },
+            {
+              "templateId": "dn_salmon_potato",
+              "name": "Baked salmon with potatoes and green beans",
+              "category": "dinner",
+              "grams": 494,
+              "calories": 550,
+              "protein": 38,
+              "carbs": 50,
+              "fats": 22,
+              "explanation": "Chosen for high protein and calorie balanced."
+            },
+            {
+              "templateId": "sn_apple_peanut",
+              "name": "Apple with peanut butter",
+              "category": "snack",
+              "grams": 182,
+              "calories": 256,
+              "protein": 7,
+              "carbs": 30,
+              "fats": 12,
+              "explanation": "Chosen for calorie balanced and smart snack choice."
+            }
+          ]
+        }
+      },
+      {
+        "date": "2025-12-25",
+        "plan": {
+          "date": "2025-12-25",
+          "totalCaloriesTarget": 2633,
+          "totalCaloriesPlanned": 0,
+          "macrosTarget": {
+            "protein": 120,
+            "carbs": 263,
+            "fats": 88
+          },
+          "macrosPlanned": {
+            "protein": 0,
+            "carbs": 0,
+            "fats": 0
+          },
+          "meals": [
+            {
+              "templateId": "bf_oats_banana",
+              "name": "Oatmeal with banana and almonds",
+              "category": "breakfast",
+              "grams": 614,
+              "calories": 435,
+              "protein": 15,
+              "carbs": 60,
+              "fats": 15,
+              "explanation": "Chosen for calorie balanced and good energy to start the day."
+            },
+            {
+              "templateId": "ln_chicken_rice",
+              "name": "Grilled chicken with brown rice and broccoli",
+              "category": "lunch",
+              "grams": 754,
+              "calories": 506,
+              "protein": 40,
+              "carbs": 55,
+              "fats": 14,
+              "explanation": "Chosen for high protein and calorie balanced."
+            },
+            {
+              "templateId": "dn_chicken_pasta",
+              "name": "Chicken pasta with tomato sauce",
+              "category": "dinner",
+              "grams": 478,
+              "calories": 584,
+              "protein": 35,
+              "carbs": 75,
+              "fats": 16,
+              "explanation": "Chosen for high protein and supports recovery without overeating."
+            },
+            {
+              "templateId": "sn_yogurt_nuts",
+              "name": "Greek yogurt with nuts and berries",
+              "category": "snack",
+              "grams": 176,
+              "calories": 288,
+              "protein": 20,
+              "carbs": 25,
+              "fats": 12,
+              "explanation": "Chosen for calorie balanced and smart snack choice."
+            }
+          ]
+        }
+      },
+      {
+        "date": "2025-12-26",
+        "plan": {
+          "date": "2025-12-26",
+          "totalCaloriesTarget": 2633,
+          "totalCaloriesPlanned": 0,
+          "macrosTarget": {
+            "protein": 120,
+            "carbs": 263,
+            "fats": 88
+          },
+          "macrosPlanned": {
+            "protein": 0,
+            "carbs": 0,
+            "fats": 0
+          },
+          "meals": [
+            {
+              "templateId": "bf_peanut_toast",
+              "name": "Peanut butter toast with banana",
+              "category": "breakfast",
+              "grams": 446,
+              "calories": 426,
+              "protein": 18,
+              "carbs": 48,
+              "fats": 18,
+              "explanation": "Chosen for calorie balanced and good energy to start the day."
+            },
+            {
+              "templateId": "ln_lentil_bowl",
+              "name": "Lentil and vegetable bowl",
+              "category": "lunch",
+              "grams": 768,
+              "calories": 434,
+              "protein": 26,
+              "carbs": 60,
+              "fats": 10,
+              "explanation": "Chosen for high protein and calorie balanced."
+            },
+            {
+              "templateId": "dn_salmon_potato",
+              "name": "Baked salmon with potatoes and green beans",
+              "category": "dinner",
+              "grams": 494,
+              "calories": 550,
+              "protein": 38,
+              "carbs": 50,
+              "fats": 22,
+              "explanation": "Chosen for high protein and calorie balanced."
+            },
+            {
+              "templateId": "sn_apple_peanut",
+              "name": "Apple with peanut butter",
+              "category": "snack",
+              "grams": 182,
+              "calories": 256,
+              "protein": 7,
+              "carbs": 30,
+              "fats": 12,
+              "explanation": "Chosen for calorie balanced and smart snack choice."
+            }
+          ]
+        }
+      },
+      {
+        "date": "2025-12-27",
+        "plan": {
+          "date": "2025-12-27",
+          "totalCaloriesTarget": 2633,
+          "totalCaloriesPlanned": 0,
+          "macrosTarget": {
+            "protein": 120,
+            "carbs": 263,
+            "fats": 88
+          },
+          "macrosPlanned": {
+            "protein": 0,
+            "carbs": 0,
+            "fats": 0
+          },
+          "meals": [
+            {
+              "templateId": "bf_yogurt_honey",
+              "name": "Greek yogurt with honey and oats",
+              "category": "breakfast",
+              "grams": 564,
+              "calories": 396,
+              "protein": 22,
+              "carbs": 50,
+              "fats": 12,
+              "explanation": "Chosen for calorie balanced and good energy to start the day."
+            },
+            {
+              "templateId": "ln_chicken_rice",
+              "name": "Grilled chicken with brown rice and broccoli",
+              "category": "lunch",
+              "grams": 754,
+              "calories": 506,
+              "protein": 40,
+              "carbs": 55,
+              "fats": 14,
+              "explanation": "Chosen for high protein and calorie balanced."
+            },
+            {
+              "templateId": "dn_chicken_pasta",
+              "name": "Chicken pasta with tomato sauce",
+              "category": "dinner",
+              "grams": 478,
+              "calories": 584,
+              "protein": 35,
+              "carbs": 75,
+              "fats": 16,
+              "explanation": "Chosen for high protein and supports recovery without overeating."
+            },
+            {
+              "templateId": "sn_yogurt_nuts",
+              "name": "Greek yogurt with nuts and berries",
+              "category": "snack",
+              "grams": 176,
+              "calories": 288,
+              "protein": 20,
+              "carbs": 25,
+              "fats": 12,
+              "explanation": "Chosen for calorie balanced and smart snack choice."
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "grocery": {
+    "weekStart": null,
+    "weekEnd": null,
+    "items": [
+      {
+        "name": "greek yogurt",
+        "type": "liquid",
+        "internal": {
+          "grams": 0,
+          "milliliters": 1050,
+          "count": 0
+        },
+        "primary": {
+          "value": 0,
+          "unit": "",
+          "text": ""
+        }
+      },
+      {
+        "name": "honey",
+        "type": "solid",
+        "internal": {
+          "grams": 60,
+          "milliliters": 0,
+          "count": 0
+        },
+        "primary": {
+          "value": 60,
+          "unit": "g",
+          "text": "60 g"
+        },
+        "alt": [
+          {
+            "value": 60,
+            "unit": "g",
+            "text": "≈ 60 g"
+          },
+          {
+            "value": 2.12,
+            "unit": "oz",
+            "text": "≈ 2.12 oz"
+          },
+          {
+            "value": 0.25,
+            "unit": "cup",
+            "text": "≈ 0.25 cups"
+          }
+        ],
+        "packs": {
+          "packSize": 250,
+          "packUnit": "g",
+          "packCount": 1,
+          "estimatedWaste": 190
+        },
+        "portions": {
+          "portionCount": 1,
+          "portionSize": 150,
+          "portionUnit": "g"
+        }
+      },
+      {
+        "name": "rolled oats",
+        "type": "solid",
+        "internal": {
+          "grams": 200,
+          "milliliters": 0,
+          "count": 0
+        },
+        "primary": {
+          "value": 200,
+          "unit": "g",
+          "text": "200 g"
+        },
+        "alt": [
+          {
+            "value": 200,
+            "unit": "g",
+            "text": "≈ 200 g"
+          },
+          {
+            "value": 7.05,
+            "unit": "oz",
+            "text": "≈ 7.05 oz"
+          },
+          {
+            "value": 0.83,
+            "unit": "cup",
+            "text": "≈ 0.83 cups"
+          }
+        ],
+        "packs": {
+          "packSize": 250,
+          "packUnit": "g",
+          "packCount": 1,
+          "estimatedWaste": 50
+        },
+        "portions": {
+          "portionCount": 1,
+          "portionSize": 150,
+          "portionUnit": "g"
+        }
+      },
+      {
+        "name": "chicken breast",
+        "type": "meat",
+        "internal": {
+          "grams": 810,
+          "milliliters": 0,
+          "count": 0
+        },
+        "primary": {
+          "value": 810,
+          "unit": "g",
+          "text": "810 g"
+        },
+        "alt": [
+          {
+            "value": 810,
+            "unit": "g",
+            "text": "≈ 810 g"
+          },
+          {
+            "value": 28.57,
+            "unit": "oz",
+            "text": "≈ 28.57 oz"
+          },
+          {
+            "value": 1.79,
+            "unit": "lb",
+            "text": "≈ 1.79 lb"
+          }
+        ],
+        "packs": {
+          "packSize": 250,
+          "packUnit": "g",
+          "packCount": 4,
+          "estimatedWaste": 190
+        },
+        "portions": {
+          "portionCount": 6,
+          "portionSize": 130,
+          "portionUnit": "g"
+        }
+      },
+      {
+        "name": "brown rice",
+        "type": "solid",
+        "internal": {
+          "grams": 300,
+          "milliliters": 0,
+          "count": 0
+        },
+        "primary": {
+          "value": 300,
+          "unit": "g",
+          "text": "300 g"
+        },
+        "alt": [
+          {
+            "value": 300,
+            "unit": "g",
+            "text": "≈ 300 g"
+          },
+          {
+            "value": 10.58,
+            "unit": "oz",
+            "text": "≈ 10.58 oz"
+          },
+          {
+            "value": 1.3,
+            "unit": "cup",
+            "text": "≈ 1.3 cups"
+          }
+        ],
+        "packs": {
+          "packSize": 250,
+          "packUnit": "g",
+          "packCount": 2,
+          "estimatedWaste": 200
+        },
+        "portions": {
+          "portionCount": 2,
+          "portionSize": 150,
+          "portionUnit": "g"
+        }
+      },
+      {
+        "name": "broccoli",
+        "type": "produce",
+        "internal": {
+          "grams": 200,
+          "milliliters": 0,
+          "count": 0
+        },
+        "primary": {
+          "value": 200,
+          "unit": "g",
+          "text": "200 g"
+        },
+        "alt": [
+          {
+            "value": 200,
+            "unit": "g",
+            "text": "≈ 200 g"
+          },
+          {
+            "value": 7.05,
+            "unit": "oz",
+            "text": "≈ 7.05 oz"
+          },
+          {
+            "value": 0.83,
+            "unit": "cup",
+            "text": "≈ 0.83 cups"
+          }
+        ],
+        "packs": {
+          "packSize": 250,
+          "packUnit": "g",
+          "packCount": 1,
+          "estimatedWaste": 50
+        },
+        "portions": {
+          "portionCount": 3,
+          "portionSize": 80,
+          "portionUnit": "g"
+        }
+      },
+      {
+        "name": "olive oil",
+        "type": "liquid",
+        "internal": {
+          "grams": 0,
+          "milliliters": 200,
+          "count": 0
+        },
+        "primary": {
+          "value": 0,
+          "unit": "",
+          "text": ""
+        }
+      },
+      {
+        "name": "salmon",
+        "type": "meat",
+        "internal": {
+          "grams": 720,
+          "milliliters": 0,
+          "count": 0
+        },
+        "primary": {
+          "value": 720,
+          "unit": "g",
+          "text": "720 g"
+        },
+        "alt": [
+          {
+            "value": 720,
+            "unit": "g",
+            "text": "≈ 720 g"
+          },
+          {
+            "value": 25.4,
+            "unit": "oz",
+            "text": "≈ 25.4 oz"
+          },
+          {
+            "value": 1.59,
+            "unit": "lb",
+            "text": "≈ 1.59 lb"
+          }
+        ],
+        "packs": {
+          "packSize": 250,
+          "packUnit": "g",
+          "packCount": 3,
+          "estimatedWaste": 30
+        },
+        "portions": {
+          "portionCount": 6,
+          "portionSize": 130,
+          "portionUnit": "g"
+        }
+      },
+      {
+        "name": "potatoes",
+        "type": "produce",
+        "internal": {
+          "grams": 800,
+          "milliliters": 0,
+          "count": 0
+        },
+        "primary": {
+          "value": 5,
+          "unit": "pcs",
+          "text": "5 pcs"
+        },
+        "alt": [
+          {
+            "value": 800,
+            "unit": "g",
+            "text": "≈ 800 g"
+          },
+          {
+            "value": 28.22,
+            "unit": "oz",
+            "text": "≈ 28.22 oz"
+          },
+          {
+            "value": 3.3,
+            "unit": "cup",
+            "text": "≈ 3.3 cups"
+          }
+        ],
+        "packs": {
+          "packSize": 250,
+          "packUnit": "g",
+          "packCount": 4,
+          "estimatedWaste": 200
+        },
+        "portions": {
+          "portionCount": 10,
+          "portionSize": 80,
+          "portionUnit": "g"
+        }
+      },
+      {
+        "name": "green beans",
+        "type": "solid",
+        "internal": {
+          "grams": 280,
+          "milliliters": 0,
+          "count": 0
+        },
+        "primary": {
+          "value": 280,
+          "unit": "g",
+          "text": "280 g"
+        },
+        "alt": [
+          {
+            "value": 280,
+            "unit": "g",
+            "text": "≈ 280 g"
+          },
+          {
+            "value": 9.88,
+            "unit": "oz",
+            "text": "≈ 9.88 oz"
+          },
+          {
+            "value": 1.2,
+            "unit": "cup",
+            "text": "≈ 1.2 cups"
+          }
+        ],
+        "packs": {
+          "packSize": 250,
+          "packUnit": "g",
+          "packCount": 2,
+          "estimatedWaste": 220
+        },
+        "portions": {
+          "portionCount": 2,
+          "portionSize": 150,
+          "portionUnit": "g"
+        }
+      },
+      {
+        "name": "apple",
+        "type": "produce",
+        "internal": {
+          "grams": 480,
+          "milliliters": 0,
+          "count": 0
+        },
+        "primary": {
+          "value": 3,
+          "unit": "pcs",
+          "text": "3 pcs"
+        },
+        "alt": [
+          {
+            "value": 480,
+            "unit": "g",
+            "text": "≈ 480 g"
+          },
+          {
+            "value": 16.93,
+            "unit": "oz",
+            "text": "≈ 16.93 oz"
+          },
+          {
+            "value": 2,
+            "unit": "cup",
+            "text": "≈ 2 cups"
+          }
+        ],
+        "packs": {
+          "packSize": 250,
+          "packUnit": "g",
+          "packCount": 2,
+          "estimatedWaste": 20
+        },
+        "portions": {
+          "portionCount": 6,
+          "portionSize": 80,
+          "portionUnit": "g"
+        }
+      },
+      {
+        "name": "peanut butter",
+        "type": "solid",
+        "internal": {
+          "grams": 210,
+          "milliliters": 0,
+          "count": 0
+        },
+        "primary": {
+          "value": 210,
+          "unit": "g",
+          "text": "210 g"
+        },
+        "alt": [
+          {
+            "value": 210,
+            "unit": "g",
+            "text": "≈ 210 g"
+          },
+          {
+            "value": 7.41,
+            "unit": "oz",
+            "text": "≈ 7.41 oz"
+          },
+          {
+            "value": 0.88,
+            "unit": "cup",
+            "text": "≈ 0.88 cups"
+          }
+        ],
+        "packs": {
+          "packSize": 250,
+          "packUnit": "g",
+          "packCount": 1,
+          "estimatedWaste": 40
+        },
+        "portions": {
+          "portionCount": 1,
+          "portionSize": 150,
+          "portionUnit": "g"
+        }
+      },
+      {
+        "name": "cinnamon",
+        "type": "spice",
+        "internal": {
+          "grams": 8,
+          "milliliters": 0,
+          "count": 0
+        },
+        "primary": {
+          "value": 1.1,
+          "unit": "tbsp",
+          "text": "1.1 tbsp"
+        },
+        "alt": [
+          {
+            "value": 8,
+            "unit": "g",
+            "text": "≈ 8 g"
+          },
+          {
+            "value": 3.2,
+            "unit": "tsp",
+            "text": "≈ 3.2 tsp"
+          },
+          {
+            "value": 1.1,
+            "unit": "tbsp",
+            "text": "≈ 1.1 tbsp"
+          }
+        ],
+        "portions": {
+          "portionCount": 1,
+          "portionSize": 1.1,
+          "portionUnit": "tbsp"
+        }
+      },
+      {
+        "name": "whole-grain bread",
+        "type": "solid",
+        "internal": {
+          "grams": 240,
+          "milliliters": 0,
+          "count": 0
+        },
+        "primary": {
+          "value": 240,
+          "unit": "g",
+          "text": "240 g"
+        },
+        "alt": [
+          {
+            "value": 240,
+            "unit": "g",
+            "text": "≈ 240 g"
+          },
+          {
+            "value": 8.47,
+            "unit": "oz",
+            "text": "≈ 8.47 oz"
+          },
+          {
+            "value": 1,
+            "unit": "cup",
+            "text": "≈ 1 cups"
+          }
+        ],
+        "packs": {
+          "packSize": 250,
+          "packUnit": "g",
+          "packCount": 1,
+          "estimatedWaste": 10
+        },
+        "portions": {
+          "portionCount": 2,
+          "portionSize": 150,
+          "portionUnit": "g"
+        }
+      },
+      {
+        "name": "banana",
+        "type": "produce",
+        "internal": {
+          "grams": 400,
+          "milliliters": 0,
+          "count": 0
+        },
+        "primary": {
+          "value": 3,
+          "unit": "pcs",
+          "text": "3 pcs"
+        },
+        "alt": [
+          {
+            "value": 400,
+            "unit": "g",
+            "text": "≈ 400 g"
+          },
+          {
+            "value": 14.11,
+            "unit": "oz",
+            "text": "≈ 14.11 oz"
+          },
+          {
+            "value": 1.7,
+            "unit": "cup",
+            "text": "≈ 1.7 cups"
+          }
+        ],
+        "packs": {
+          "packSize": 250,
+          "packUnit": "g",
+          "packCount": 2,
+          "estimatedWaste": 100
+        },
+        "portions": {
+          "portionCount": 5,
+          "portionSize": 80,
+          "portionUnit": "g"
+        }
+      },
+      {
+        "name": "lentils",
+        "type": "solid",
+        "internal": {
+          "grams": 450,
+          "milliliters": 0,
+          "count": 0
+        },
+        "primary": {
+          "value": 450,
+          "unit": "g",
+          "text": "450 g"
+        },
+        "alt": [
+          {
+            "value": 450,
+            "unit": "g",
+            "text": "≈ 450 g"
+          },
+          {
+            "value": 15.87,
+            "unit": "oz",
+            "text": "≈ 15.87 oz"
+          },
+          {
+            "value": 1.9,
+            "unit": "cup",
+            "text": "≈ 1.9 cups"
+          }
+        ],
+        "packs": {
+          "packSize": 250,
+          "packUnit": "g",
+          "packCount": 2,
+          "estimatedWaste": 50
+        },
+        "portions": {
+          "portionCount": 3,
+          "portionSize": 150,
+          "portionUnit": "g"
+        }
+      },
+      {
+        "name": "carrot",
+        "type": "produce",
+        "internal": {
+          "grams": 150,
+          "milliliters": 0,
+          "count": 0
+        },
+        "primary": {
+          "value": 2,
+          "unit": "pcs",
+          "text": "2 pcs"
+        },
+        "alt": [
+          {
+            "value": 150,
+            "unit": "g",
+            "text": "≈ 150 g"
+          },
+          {
+            "value": 5.29,
+            "unit": "oz",
+            "text": "≈ 5.29 oz"
+          },
+          {
+            "value": 0.63,
+            "unit": "cup",
+            "text": "≈ 0.63 cups"
+          }
+        ],
+        "packs": {
+          "packSize": 250,
+          "packUnit": "g",
+          "packCount": 1,
+          "estimatedWaste": 100
+        },
+        "portions": {
+          "portionCount": 2,
+          "portionSize": 80,
+          "portionUnit": "g"
+        }
+      },
+      {
+        "name": "onion",
+        "type": "produce",
+        "internal": {
+          "grams": 120,
+          "milliliters": 0,
+          "count": 0
+        },
+        "primary": {
+          "value": 120,
+          "unit": "g",
+          "text": "120 g"
+        },
+        "alt": [
+          {
+            "value": 120,
+            "unit": "g",
+            "text": "≈ 120 g"
+          },
+          {
+            "value": 4.23,
+            "unit": "oz",
+            "text": "≈ 4.23 oz"
+          },
+          {
+            "value": 0.5,
+            "unit": "cup",
+            "text": "≈ 0.5 cups"
+          }
+        ],
+        "packs": {
+          "packSize": 250,
+          "packUnit": "g",
+          "packCount": 1,
+          "estimatedWaste": 130
+        },
+        "portions": {
+          "portionCount": 2,
+          "portionSize": 80,
+          "portionUnit": "g"
+        }
+      },
+      {
+        "name": "spinach",
+        "type": "produce",
+        "internal": {
+          "grams": 240,
+          "milliliters": 0,
+          "count": 0
+        },
+        "primary": {
+          "value": 240,
+          "unit": "g",
+          "text": "240 g"
+        },
+        "alt": [
+          {
+            "value": 240,
+            "unit": "g",
+            "text": "≈ 240 g"
+          },
+          {
+            "value": 8.47,
+            "unit": "oz",
+            "text": "≈ 8.47 oz"
+          },
+          {
+            "value": 1,
+            "unit": "cup",
+            "text": "≈ 1 cups"
+          }
+        ],
+        "packs": {
+          "packSize": 250,
+          "packUnit": "g",
+          "packCount": 1,
+          "estimatedWaste": 10
+        },
+        "portions": {
+          "portionCount": 3,
+          "portionSize": 80,
+          "portionUnit": "g"
+        }
+      },
+      {
+        "name": "tomato",
+        "type": "produce",
+        "internal": {
+          "grams": 340,
+          "milliliters": 0,
+          "count": 0
+        },
+        "primary": {
+          "value": 3,
+          "unit": "pcs",
+          "text": "3 pcs"
+        },
+        "alt": [
+          {
+            "value": 340,
+            "unit": "g",
+            "text": "≈ 340 g"
+          },
+          {
+            "value": 11.99,
+            "unit": "oz",
+            "text": "≈ 11.99 oz"
+          },
+          {
+            "value": 1.4,
+            "unit": "cup",
+            "text": "≈ 1.4 cups"
+          }
+        ],
+        "packs": {
+          "packSize": 250,
+          "packUnit": "g",
+          "packCount": 2,
+          "estimatedWaste": 160
+        },
+        "portions": {
+          "portionCount": 4,
+          "portionSize": 80,
+          "portionUnit": "g"
+        }
+      },
+      {
+        "name": "pasta",
+        "type": "solid",
+        "internal": {
+          "grams": 540,
+          "milliliters": 0,
+          "count": 0
+        },
+        "primary": {
+          "value": 540,
+          "unit": "g",
+          "text": "540 g"
+        },
+        "alt": [
+          {
+            "value": 540,
+            "unit": "g",
+            "text": "≈ 540 g"
+          },
+          {
+            "value": 19.05,
+            "unit": "oz",
+            "text": "≈ 19.05 oz"
+          },
+          {
+            "value": 1.19,
+            "unit": "lb",
+            "text": "≈ 1.19 lb"
+          },
+          {
+            "value": 2.3,
+            "unit": "cup",
+            "text": "≈ 2.3 cups"
+          }
+        ],
+        "packs": {
+          "packSize": 250,
+          "packUnit": "g",
+          "packCount": 3,
+          "estimatedWaste": 210
+        },
+        "portions": {
+          "portionCount": 4,
+          "portionSize": 150,
+          "portionUnit": "g"
+        }
+      },
+      {
+        "name": "tomato sauce",
+        "type": "liquid",
+        "internal": {
+          "grams": 0,
+          "milliliters": 300,
+          "count": 0
+        },
+        "primary": {
+          "value": 0,
+          "unit": "",
+          "text": ""
+        }
+      },
+      {
+        "name": "mixed nuts",
+        "type": "solid",
+        "internal": {
+          "grams": 75,
+          "milliliters": 0,
+          "count": 0
+        },
+        "primary": {
+          "value": 75,
+          "unit": "g",
+          "text": "75 g"
+        },
+        "alt": [
+          {
+            "value": 75,
+            "unit": "g",
+            "text": "≈ 75 g"
+          },
+          {
+            "value": 2.65,
+            "unit": "oz",
+            "text": "≈ 2.65 oz"
+          },
+          {
+            "value": 0.31,
+            "unit": "cup",
+            "text": "≈ 0.31 cups"
+          }
+        ],
+        "packs": {
+          "packSize": 250,
+          "packUnit": "g",
+          "packCount": 1,
+          "estimatedWaste": 175
+        },
+        "portions": {
+          "portionCount": 1,
+          "portionSize": 150,
+          "portionUnit": "g"
+        }
+      },
+      {
+        "name": "berries",
+        "type": "produce",
+        "internal": {
+          "grams": 75,
+          "milliliters": 0,
+          "count": 0
+        },
+        "primary": {
+          "value": 75,
+          "unit": "g",
+          "text": "75 g"
+        },
+        "alt": [
+          {
+            "value": 75,
+            "unit": "g",
+            "text": "≈ 75 g"
+          },
+          {
+            "value": 2.65,
+            "unit": "oz",
+            "text": "≈ 2.65 oz"
+          },
+          {
+            "value": 0.31,
+            "unit": "cup",
+            "text": "≈ 0.31 cups"
+          }
+        ],
+        "packs": {
+          "packSize": 250,
+          "packUnit": "g",
+          "packCount": 1,
+          "estimatedWaste": 175
+        },
+        "portions": {
+          "portionCount": 1,
+          "portionSize": 80,
+          "portionUnit": "g"
+        }
+      },
+      {
+        "name": "tuna",
+        "type": "meat",
+        "internal": {
+          "grams": 240,
+          "milliliters": 0,
+          "count": 0
+        },
+        "primary": {
+          "value": 240,
+          "unit": "g",
+          "text": "240 g"
+        },
+        "alt": [
+          {
+            "value": 240,
+            "unit": "g",
+            "text": "≈ 240 g"
+          },
+          {
+            "value": 8.47,
+            "unit": "oz",
+            "text": "≈ 8.47 oz"
+          }
+        ],
+        "packs": {
+          "packSize": 250,
+          "packUnit": "g",
+          "packCount": 1,
+          "estimatedWaste": 10
+        },
+        "portions": {
+          "portionCount": 2,
+          "portionSize": 130,
+          "portionUnit": "g"
+        }
+      },
+      {
+        "name": "white beans",
+        "type": "solid",
+        "internal": {
+          "grams": 280,
+          "milliliters": 0,
+          "count": 0
+        },
+        "primary": {
+          "value": 280,
+          "unit": "g",
+          "text": "280 g"
+        },
+        "alt": [
+          {
+            "value": 280,
+            "unit": "g",
+            "text": "≈ 280 g"
+          },
+          {
+            "value": 9.88,
+            "unit": "oz",
+            "text": "≈ 9.88 oz"
+          },
+          {
+            "value": 1.2,
+            "unit": "cup",
+            "text": "≈ 1.2 cups"
+          }
+        ],
+        "packs": {
+          "packSize": 250,
+          "packUnit": "g",
+          "packCount": 2,
+          "estimatedWaste": 220
+        },
+        "portions": {
+          "portionCount": 2,
+          "portionSize": 150,
+          "portionUnit": "g"
+        }
+      },
+      {
+        "name": "cucumber",
+        "type": "produce",
+        "internal": {
+          "grams": 120,
+          "milliliters": 0,
+          "count": 0
+        },
+        "primary": {
+          "value": 120,
+          "unit": "g",
+          "text": "120 g"
+        },
+        "alt": [
+          {
+            "value": 120,
+            "unit": "g",
+            "text": "≈ 120 g"
+          },
+          {
+            "value": 4.23,
+            "unit": "oz",
+            "text": "≈ 4.23 oz"
+          },
+          {
+            "value": 0.5,
+            "unit": "cup",
+            "text": "≈ 0.5 cups"
+          }
+        ],
+        "packs": {
+          "packSize": 250,
+          "packUnit": "g",
+          "packCount": 1,
+          "estimatedWaste": 130
+        },
+        "portions": {
+          "portionCount": 2,
+          "portionSize": 80,
+          "portionUnit": "g"
+        }
+      },
+      {
+        "name": "almonds",
+        "type": "solid",
+        "internal": {
+          "grams": 20,
+          "milliliters": 0,
+          "count": 0
+        },
+        "primary": {
+          "value": 20,
+          "unit": "g",
+          "text": "20 g"
+        },
+        "alt": [
+          {
+            "value": 20,
+            "unit": "g",
+            "text": "≈ 20 g"
+          },
+          {
+            "value": 0.71,
+            "unit": "oz",
+            "text": "≈ 0.71 oz"
+          },
+          {
+            "value": 0.08,
+            "unit": "cup",
+            "text": "≈ 0.08 cups"
+          }
+        ],
+        "packs": {
+          "packSize": 250,
+          "packUnit": "g",
+          "packCount": 1,
+          "estimatedWaste": 230
+        },
+        "portions": {
+          "portionCount": 1,
+          "portionSize": 150,
+          "portionUnit": "g"
+        }
+      },
+      {
+        "name": "milk",
+        "type": "liquid",
+        "internal": {
+          "grams": 0,
+          "milliliters": 150,
+          "count": 0
+        },
+        "primary": {
+          "value": 0,
+          "unit": "",
+          "text": ""
+        }
+      }
+    ]
+  },
+  "pricing": {
+    "currency": "EUR",
+    "targetCurrency": "EUR",
+    "mode": "auto",
+    "shouldConvert": false,
+    "activateConversion": false,
+    "currencySymbol": "€",
+    "converted": false,
+    "items": [
+      {
+        "name": "greek yogurt",
+        "grams": 0,
+        "unit": "g",
+        "pricePerUnit": 1.625,
+        "estimatedCost": 0,
+        "priceSource": "cache"
+      },
+      {
+        "name": "honey",
+        "grams": 60,
+        "unit": "g",
+        "pricePerUnit": 3.575,
+        "estimatedCost": 0.2145,
+        "priceSource": "cache"
+      },
+      {
+        "name": "rolled oats",
+        "grams": 200,
+        "unit": "g",
+        "pricePerUnit": 0.5850000000000001,
+        "estimatedCost": 0.11700000000000002,
+        "priceSource": "cache"
+      },
+      {
+        "name": "chicken breast",
+        "grams": 810,
+        "unit": "g",
+        "pricePerUnit": 5.525,
+        "estimatedCost": 4.475250000000001,
+        "priceSource": "cache"
+      },
+      {
+        "name": "brown rice",
+        "grams": 300,
+        "unit": "g",
+        "pricePerUnit": 0.9750000000000001,
+        "estimatedCost": 0.29250000000000004,
+        "priceSource": "cache"
+      },
+      {
+        "name": "broccoli",
+        "grams": 200,
+        "unit": "g",
+        "pricePerUnit": 1.625,
+        "estimatedCost": 0.325,
+        "priceSource": "cache"
+      },
+      {
+        "name": "olive oil",
+        "grams": 0,
+        "unit": "g",
+        "pricePerUnit": 5.2,
+        "estimatedCost": 0,
+        "priceSource": "cache"
+      },
+      {
+        "name": "salmon",
+        "grams": 720,
+        "unit": "g",
+        "pricePerUnit": 9.75,
+        "estimatedCost": 7.02,
+        "priceSource": "cache"
+      },
+      {
+        "name": "potatoes",
+        "grams": 800,
+        "unit": "g",
+        "pricePerUnit": 0.325,
+        "estimatedCost": 0.26,
+        "priceSource": "cache"
+      },
+      {
+        "name": "green beans",
+        "grams": 280,
+        "unit": "g",
+        "pricePerUnit": 1.625,
+        "estimatedCost": 0.45500000000000007,
+        "priceSource": "cache"
+      },
+      {
+        "name": "apple",
+        "grams": 480,
+        "unit": "g",
+        "pricePerUnit": 0.9750000000000001,
+        "estimatedCost": 0.468,
+        "priceSource": "cache"
+      },
+      {
+        "name": "peanut butter",
+        "grams": 210,
+        "unit": "g",
+        "pricePerUnit": 2.9250000000000003,
+        "estimatedCost": 0.6142500000000001,
+        "priceSource": "cache"
+      },
+      {
+        "name": "cinnamon",
+        "grams": 8,
+        "unit": "g",
+        "pricePerUnit": 8.125,
+        "estimatedCost": 0.065,
+        "priceSource": "cache"
+      },
+      {
+        "name": "whole-grain bread",
+        "grams": 240,
+        "unit": "g",
+        "pricePerUnit": 1.625,
+        "estimatedCost": 0.39,
+        "priceSource": "cache"
+      },
+      {
+        "name": "banana",
+        "grams": 400,
+        "unit": "g",
+        "pricePerUnit": 0.9750000000000001,
+        "estimatedCost": 0.39000000000000007,
+        "priceSource": "cache"
+      },
+      {
+        "name": "lentils",
+        "grams": 450,
+        "unit": "g",
+        "pricePerUnit": 0.9750000000000001,
+        "estimatedCost": 0.43875000000000003,
+        "priceSource": "cache"
+      },
+      {
+        "name": "carrot",
+        "grams": 150,
+        "unit": "g",
+        "pricePerUnit": 0.45499999999999996,
+        "estimatedCost": 0.06824999999999999,
+        "priceSource": "cache"
+      },
+      {
+        "name": "onion",
+        "grams": 120,
+        "unit": "g",
+        "pricePerUnit": 0.9750000000000001,
+        "estimatedCost": 0.117,
+        "priceSource": "cache"
+      },
+      {
+        "name": "spinach",
+        "grams": 240,
+        "unit": "g",
+        "pricePerUnit": 1.625,
+        "estimatedCost": 0.39,
+        "priceSource": "cache"
+      },
+      {
+        "name": "tomato",
+        "grams": 340,
+        "unit": "g",
+        "pricePerUnit": 0.9750000000000001,
+        "estimatedCost": 0.3315000000000001,
+        "priceSource": "cache"
+      },
+      {
+        "name": "pasta",
+        "grams": 540,
+        "unit": "g",
+        "pricePerUnit": 0.78,
+        "estimatedCost": 0.4212,
+        "priceSource": "cache"
+      },
+      {
+        "name": "tomato sauce",
+        "grams": 0,
+        "unit": "g",
+        "pricePerUnit": 1.625,
+        "estimatedCost": 0,
+        "priceSource": "cache"
+      },
+      {
+        "name": "mixed nuts",
+        "grams": 75,
+        "unit": "g",
+        "pricePerUnit": 4.875,
+        "estimatedCost": 0.365625,
+        "priceSource": "cache"
+      },
+      {
+        "name": "berries",
+        "grams": 75,
+        "unit": "g",
+        "pricePerUnit": 2.9250000000000003,
+        "estimatedCost": 0.21937500000000001,
+        "priceSource": "cache"
+      },
+      {
+        "name": "tuna",
+        "grams": 240,
+        "unit": "g",
+        "pricePerUnit": 4.875,
+        "estimatedCost": 1.17,
+        "priceSource": "cache"
+      },
+      {
+        "name": "white beans",
+        "grams": 280,
+        "unit": "g",
+        "pricePerUnit": 0.9750000000000001,
+        "estimatedCost": 0.2730000000000001,
+        "priceSource": "cache"
+      },
+      {
+        "name": "cucumber",
+        "grams": 120,
+        "unit": "g",
+        "pricePerUnit": 0.9750000000000001,
+        "estimatedCost": 0.117,
+        "priceSource": "cache"
+      },
+      {
+        "name": "almonds",
+        "grams": 20,
+        "unit": "g",
+        "pricePerUnit": 2.08,
+        "estimatedCost": 0.041600000000000005,
+        "priceSource": "cache"
+      },
+      {
+        "name": "milk",
+        "grams": 0,
+        "unit": "g",
+        "pricePerUnit": 0.7474999999999999,
+        "estimatedCost": 0,
+        "priceSource": "cache"
+      }
+    ],
+    "totalCost": 19.039800000000003
+  },
+  "intelligence": {
+    "weekStart": "2025-12-16",
+    "weekEnd": "2025-12-22",
+    "currency": "EUR",
+    "entriesCount": 1443,
+    "totalSpent": 1007.7595449999981,
+    "projectedMonthly": 4318.969478571421,
+    "projectedMonthlyRounded": 4319,
+    "weeklyCalories": 0,
+    "weeklyCalorieTarget": 18431,
+    "weeklyDifference": -18431,
+    "weeklyDirection": "deficit",
+    "daily": [
+      {
+        "date": "2025-12-16",
+        "calories": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0,
+        "dailyCalorieTarget": 2633,
+        "difference": -2633,
+        "direction": "deficit",
+        "foods": [],
+        "metabolic": {
+          "BMR": 1699,
+          "TDEE": 2633,
+          "proteinTarget": 135,
+          "carbTarget": 325,
+          "fatTarget": 88
+        },
+        "spent": 0
+      },
+      {
+        "date": "2025-12-17",
+        "calories": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0,
+        "dailyCalorieTarget": 2633,
+        "difference": -2633,
+        "direction": "deficit",
+        "foods": [],
+        "metabolic": {
+          "BMR": 1699,
+          "TDEE": 2633,
+          "proteinTarget": 135,
+          "carbTarget": 325,
+          "fatTarget": 88
+        },
+        "spent": 0
+      },
+      {
+        "date": "2025-12-18",
+        "calories": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0,
+        "dailyCalorieTarget": 2633,
+        "difference": -2633,
+        "direction": "deficit",
+        "foods": [],
+        "metabolic": {
+          "BMR": 1699,
+          "TDEE": 2633,
+          "proteinTarget": 135,
+          "carbTarget": 325,
+          "fatTarget": 88
+        },
+        "spent": 0
+      },
+      {
+        "date": "2025-12-19",
+        "calories": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0,
+        "dailyCalorieTarget": 2633,
+        "difference": -2633,
+        "direction": "deficit",
+        "foods": [],
+        "metabolic": {
+          "BMR": 1699,
+          "TDEE": 2633,
+          "proteinTarget": 135,
+          "carbTarget": 325,
+          "fatTarget": 88
+        },
+        "spent": 0
+      },
+      {
+        "date": "2025-12-20",
+        "calories": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0,
+        "dailyCalorieTarget": 2633,
+        "difference": -2633,
+        "direction": "deficit",
+        "foods": [],
+        "metabolic": {
+          "BMR": 1699,
+          "TDEE": 2633,
+          "proteinTarget": 135,
+          "carbTarget": 325,
+          "fatTarget": 88
+        },
+        "spent": 0
+      },
+      {
+        "date": "2025-12-21",
+        "calories": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0,
+        "dailyCalorieTarget": 2633,
+        "difference": -2633,
+        "direction": "deficit",
+        "foods": [],
+        "metabolic": {
+          "BMR": 1699,
+          "TDEE": 2633,
+          "proteinTarget": 135,
+          "carbTarget": 325,
+          "fatTarget": 88
+        },
+        "spent": 0
+      },
+      {
+        "date": "2025-12-22",
+        "calories": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0,
+        "dailyCalorieTarget": 2633,
+        "difference": -2633,
+        "direction": "deficit",
+        "foods": [],
+        "metabolic": {
+          "BMR": 1699,
+          "TDEE": 2633,
+          "proteinTarget": 135,
+          "carbTarget": 325,
+          "fatTarget": 88
+        },
+        "spent": 0
+      }
+    ],
+    "topIngredients": [
+      {
+        "name": "salmon",
+        "totalCost": 324.0899999999998
+      },
+      {
+        "name": "chicken breast",
+        "totalCost": 262.38225
+      },
+      {
+        "name": "tuna",
+        "totalCost": 77.76599999999998
+      },
+      {
+        "name": "pasta",
+        "totalCost": 35.287200000000006
+      },
+      {
+        "name": "apple",
+        "totalCost": 24.88199999999999
+      }
+    ],
+    "spendingTrend": {
+      "direction": "same",
+      "percentage": 0,
+      "costDifference": 0,
+      "differenceDirection": "same",
+      "lastWeekTotal": 0
+    },
+    "savingsTip": null
+  },
+  "results": {
+    "metrics": {
+      "bmr": 1699,
+      "tdee": 2633,
+      "dailyCaloriesTarget": 2633,
+      "dailyProteinTarget": 120,
+      "weeklyCaloriesTarget": 18431,
+      "weeklyBudget": 80,
+      "mealCountHint": 3,
+      "riskFlags": []
+    },
+    "strategy": {
+      "mealStructure": 3,
+      "macroEmphasis": "balanced",
+      "macroFocus": "balanced nutrition",
+      "foodStrategy": "balanced_variety",
+      "conflicts": []
+    },
+    "reasoning": [
+      "Meal structure chosen: 3 meals.",
+      "Macro focus: balanced nutrition.",
+      "Food strategy: balanced_variety."
+    ]
+  },
+  "decisionScore": {
+    "score": 81,
+    "breakdown": {
+      "protein": 83,
+      "calories": 66,
+      "consistency": 100,
+      "budget": 80
+    }
+  },
+  "protein": {
+    "today": 99,
+    "target": 120
+  }
+}
