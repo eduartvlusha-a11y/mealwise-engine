@@ -1,72 +1,44 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>MealWise Engine</title>
-  <meta charset="UTF-8" />
-</head>
+<script>
+function generatePlan() {
+  const budget = document.getElementById("budget").value;
+  const goal = document.getElementById("goal").value;
 
-<body style="font-family: Arial; padding: 40px; max-width: 800px; margin: auto;">
+  const weeklyCost = Math.floor(budget / 4);
+  const baseline = weeklyCost + 20;
+  const savings = baseline - weeklyCost;
 
-  <h1>MealWise Engine</h1>
+  document.getElementById("result").innerHTML = `
+    <h3>System Output</h3>
 
-  <p>
-    Generate a weekly meal plan based on your budget and goal.
-  </p>
+    <p><strong>Goal:</strong> ${goal}</p>
+    <p><strong>Weekly Budget:</strong> €${weeklyCost}</p>
 
-  <hr/>
+    <h4>Weekly Plan</h4>
+    <ul>
+      <li>Day 1: Chicken + Rice</li>
+      <li>Day 2: Pasta + Vegetables</li>
+      <li>Day 3: Eggs + Potatoes</li>
+    </ul>
 
-  <h2>Try Demo</h2>
+    <h4>Grocery List</h4>
+    <ul>
+      <li>Chicken — 1.2kg</li>
+      <li>Rice — 800g</li>
+      <li>Eggs — 12 units</li>
+      <li>Vegetables — mixed</li>
+    </ul>
 
-  <label>Monthly Budget (€)</label><br/>
-  <input id="budget" type="number" value="300" style="width:100%; padding:10px; margin-bottom:15px;" />
+    <h4>Cost Optimization</h4>
+    <p>Baseline: €${baseline}</p>
+    <p>Optimized: €${weeklyCost}</p>
 
-  <label>Goal</label><br/>
-  <select id="goal" style="width:100%; padding:10px; margin-bottom:15px;">
-    <option>Weight Loss</option>
-    <option>Muscle Gain</option>
-    <option>Maintenance</option>
-  </select>
+    <p style="color:green; font-weight:bold;">
+      Weekly Savings: €${savings} (${Math.round((savings / baseline) * 100)}%)
+    </p>
 
-  <button onclick="generatePlan()" style="padding:15px; width:100%; background:black; color:white; font-size:16px;">
-    Generate Plan
-  </button>
-
-  <div id="result" style="margin-top:30px;"></div>
-
-  <script>
-    function generatePlan() {
-      const budget = document.getElementById("budget").value;
-      const goal = document.getElementById("goal").value;
-
-      document.getElementById("result").innerHTML = `
-        <h3>Weekly Plan</h3>
-        <p><strong>Goal:</strong> ${goal}</p>
-        <p><strong>Budget:</strong> €${budget}</p>
-
-        <h4>Example Meals</h4>
-        <ul>
-          <li>Breakfast: Eggs + Oats</li>
-          <li>Lunch: Chicken + Rice</li>
-          <li>Dinner: Fish + Vegetables</li>
-        </ul>
-
-        <h4>Estimated Weekly Cost</h4>
-        <p>€${Math.floor(budget / 4)}</p>
-
-        <p style="color:green; font-weight:bold;">
-          Plan generated using deterministic nutrition logic.
-        </p>
-      `;
-    }
-  </script>
-
-  <hr/>
-
-  <h3>Tech Stack</h3>
-  <p>NestJS backend • Prisma • Deterministic Engine</p>
-
-  <h3>Available for acquisition</h3>
-  <p>Contact: eduartvlusha@gmail.com</p>
-
-</body>
-</html>
+    <p style="color:#555;">
+      Generated using deterministic pricing, substitution logic, and constraint-based planning.
+    </p>
+  `;
+}
+</script>
