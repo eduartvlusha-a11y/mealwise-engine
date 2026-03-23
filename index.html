@@ -4,37 +4,66 @@
   <title>MealWise Engine</title>
   <meta charset="UTF-8" />
 </head>
+
 <body style="font-family: Arial; padding: 40px; max-width: 800px; margin: auto;">
 
   <h1>MealWise Engine</h1>
 
   <p>
-    Deterministic nutrition & grocery optimization system designed to generate structured weekly meal plans based on budget, health goals, and constraints.
+    Generate a weekly meal plan based on your budget and goal.
   </p>
 
-  <h2>What it does</h2>
-  <ul>
-    <li>Calculates BMR, TDEE, calories and protein</li>
-    <li>Generates weekly meal plans</li>
-    <li>Builds grocery lists with cost estimation</li>
-    <li>Applies strict dietary constraints</li>
-  </ul>
+  <hr/>
 
-  <h2>Tech Stack</h2>
-  <ul>
-    <li>NestJS backend</li>
-    <li>Prisma ORM</li>
-    <li>Deterministic engine logic</li>
-  </ul>
+  <h2>Try Demo</h2>
 
-  <h2>Use Cases</h2>
-  <ul>
-    <li>Meal planning apps</li>
-    <li>Health platforms</li>
-    <li>Budget nutrition tools</li>
-  </ul>
+  <label>Monthly Budget (€)</label><br/>
+  <input id="budget" type="number" value="300" style="width:100%; padding:10px; margin-bottom:15px;" />
 
-  <hr />
+  <label>Goal</label><br/>
+  <select id="goal" style="width:100%; padding:10px; margin-bottom:15px;">
+    <option>Weight Loss</option>
+    <option>Muscle Gain</option>
+    <option>Maintenance</option>
+  </select>
+
+  <button onclick="generatePlan()" style="padding:15px; width:100%; background:black; color:white; font-size:16px;">
+    Generate Plan
+  </button>
+
+  <div id="result" style="margin-top:30px;"></div>
+
+  <script>
+    function generatePlan() {
+      const budget = document.getElementById("budget").value;
+      const goal = document.getElementById("goal").value;
+
+      document.getElementById("result").innerHTML = `
+        <h3>Weekly Plan</h3>
+        <p><strong>Goal:</strong> ${goal}</p>
+        <p><strong>Budget:</strong> €${budget}</p>
+
+        <h4>Example Meals</h4>
+        <ul>
+          <li>Breakfast: Eggs + Oats</li>
+          <li>Lunch: Chicken + Rice</li>
+          <li>Dinner: Fish + Vegetables</li>
+        </ul>
+
+        <h4>Estimated Weekly Cost</h4>
+        <p>€${Math.floor(budget / 4)}</p>
+
+        <p style="color:green; font-weight:bold;">
+          Plan generated using deterministic nutrition logic.
+        </p>
+      `;
+    }
+  </script>
+
+  <hr/>
+
+  <h3>Tech Stack</h3>
+  <p>NestJS backend • Prisma • Deterministic Engine</p>
 
   <h3>Available for acquisition</h3>
   <p>Contact: eduartvlusha@gmail.com</p>
