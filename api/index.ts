@@ -1,14 +1,14 @@
 import { NestFactory } from '@nestjs/core';
-import { AppModule } from '../src/app.module';
+import { SwaggerModuleOnly } from '../src/swagger.module';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import serverless from 'serverless-http';
 
 let server;
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule, {
-  logger: false,
-});
+  const app = await NestFactory.create(SwaggerModuleOnly, {
+    logger: false,
+  });
 
   const config = new DocumentBuilder()
     .setTitle('MealWise API')
@@ -19,8 +19,8 @@ async function bootstrap() {
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api/docs', app, document);
 
+  // 🔥 IMPORTANT — move this AFTER swagger
   await app.init();
-
 
   const expressApp = app.getHttpAdapter().getInstance();
   return serverless(expressApp);
