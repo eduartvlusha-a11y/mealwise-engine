@@ -46,6 +46,7 @@
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1",
     "serverless-http": "^4.0.0",
+    "swagger-ui-dist": "^5.32.1",
     "swagger-ui-express": "^5.0.1"
   },
   "devDependencies": {
