@@ -6,7 +6,9 @@ import serverless from 'serverless-http';
 let server;
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
+  const app = await NestFactory.create(AppModule, {
+  logger: false,
+});
 
   const config = new DocumentBuilder()
     .setTitle('MealWise API')
@@ -18,6 +20,7 @@ async function bootstrap() {
   SwaggerModule.setup('api/docs', app, document);
 
   await app.init();
+
 
   const expressApp = app.getHttpAdapter().getInstance();
   return serverless(expressApp);
