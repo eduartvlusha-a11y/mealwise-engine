@@ -1400,11 +1400,11 @@ for (const day of finalizedWeekPlan.days || []) {
 }
 
 const safePlanJson =
-  finalizedWeekPlan as unknown as Prisma.InputJsonValue;
+  finalizedWeekPlan as any;
 
 
 const safeMetricsJson =
-  sanitizeJsonForPrisma(metrics) as unknown as Prisma.InputJsonValue;
+  sanitizeJsonForPrisma(metrics) as any;
   const metricsObj = safeMetricsJson as any;
 
 

@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "src": "^/$",
+      "dest": "/api/docs"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.ts"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 import { UnitPreference, MeasurementSystem } from '../services/unit-conversion.service';
-import { Onboarding } from '@prisma/client';
 
-export function mapOnboardingToUnitPreference(onb: Onboarding): UnitPreference {
+
+export function mapOnboardingToUnitPreference(onb: any): UnitPreference {
   const system = (onb.preferredSystem as MeasurementSystem) || 'metric';
 
   return {
