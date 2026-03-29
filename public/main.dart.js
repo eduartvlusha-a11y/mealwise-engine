@@ -90152,7 +90152,7 @@ $S:545}
 A.tC.prototype={
 a4k(){var s=this.a,r=s.v0$
 r===$&&A.a()
-r.sGS("http://10.0.2.2:3000")
+r.sGS("https://mealwise-engine.onrender.com")
 s.v0$.sHn(B.kf)
 r=s.v0$
 r.e=B.kf
@@ -90229,7 +90229,7 @@ case 3:b1=b3
 if(b1==null||b1.length===0)throw A.f(A.d4("No token found"))
 p=t.N
 s=4
-return A.J(A.aCT(A.eD("http://10.0.2.2:3000/mealwise/premium-home"),A.af(["Authorization","Bearer "+b1,"Content-Type","application/json"],p,p)),$async$rG)
+return A.J(A.aCT(A.eD("https://mealwise-engine.onrender.com/mealwise/premium-home"),A.af(["Authorization","Bearer "+b1,"Content-Type","application/json"],p,p)),$async$rG)
 case 4:o=b3
 n=o.b
 if(n!==200)throw A.f(A.d4("Results API failed: "+n))
@@ -90335,7 +90335,7 @@ case 2:p=b
 if(p==null||p.length===0)throw A.f(A.d4("No token"))
 q=t.N
 s=3
-return A.J(A.azC(A.eD("http://10.0.2.2:3000/mealwise/start"),null,A.af(["Authorization","Bearer "+p,"Content-Type","application/json"],q,q)),$async$jr)
+return A.J(A.azC(A.eD("https://mealwise-engine.onrender.com/mealwise/start"),null,A.af(["Authorization","Bearer "+p,"Content-Type","application/json"],q,q)),$async$jr)
 case 3:q=b.b
 if(q!==200&&q!==201)throw A.f(A.d4("Start plan failed"))
 return A.O(null,r)}})
@@ -90348,7 +90348,7 @@ case 2:p=b
 if(p==null||p.length===0)throw A.f(A.d4("No token"))
 q=t.N
 s=3
-return A.J(A.azC(A.eD("http://10.0.2.2:3000/mealwise/regenerate-week"),null,A.af(["Authorization","Bearer "+p,"Content-Type","application/json"],q,q)),$async$w0)
+return A.J(A.azC(A.eD("https://mealwise-engine.onrender.com/mealwise/regenerate-week"),null,A.af(["Authorization","Bearer "+p,"Content-Type","application/json"],q,q)),$async$w0)
 case 3:q=b.b
 if(q!==200&&q!==201)throw A.f(A.d4("Regenerate plan failed"))
 return A.O(null,r)}})
@@ -90360,7 +90360,7 @@ for(;;)switch(s){case 0:s=2
 return A.J(A.jx(),$async$vw)
 case 2:m=j
 if(m==null||m.length===0)throw A.f(A.d4("No token"))
-q=A.eD("http://10.0.2.2:3000/mealwise/food-log")
+q=A.eD("https://mealwise-engine.onrender.com/mealwise/food-log")
 p=t.N
 o=A.af(["Authorization","Bearer "+m,"Content-Type","application/json"],p,p)
 s=3
@@ -90377,7 +90377,7 @@ return A.J(A.jx(),$async$rL)
 case 3:p=b
 o=t.N
 s=4
-return A.J(A.aCT(A.eD("http://10.0.2.2:3000/mealwise/food-log/today"),A.af(["Authorization","Bearer "+A.l(p),"Content-Type","application/json"],o,o)),$async$rL)
+return A.J(A.aCT(A.eD("https://mealwise-engine.onrender.com/mealwise/food-log/today"),A.af(["Authorization","Bearer "+A.l(p),"Content-Type","application/json"],o,o)),$async$rL)
 case 4:n=b
 if(n.b!==200)throw A.f(A.d4("Failed to load eaten meals"))
 q=J.l9(B.bH.zH(0,A.Jg(A.J7(n.e)).el(0,n.w),null),t.a)
@@ -92012,7 +92012,7 @@ for(;;)switch(s){case 0:s=3
 return A.J(A.jx(),$async$uY)
 case 3:f=b
 if(f==null||f.length===0)throw A.f(A.d4("No auth token found"))
-p=A.eD("http://10.0.2.2:3000/mealwise/results")
+p=A.eD("https://mealwise-engine.onrender.com/mealwise/results")
 o=t.N
 s=4
 return A.J(A.aCT(p,A.af(["Authorization","Bearer "+f,"Content-Type","application/json"],o,o)),$async$uY)
