@@ -3,6 +3,7 @@ import { OnboardingService } from './onboarding.service';
 import { JwtAuthGuard } from '../auth/guards/jwt.guard';
 import { MealwiseService } from '../mealwise/mealwise.service';
 import { ProfileService } from '../profile/profile.service';
+import { ApiBearerAuth } from '@nestjs/swagger';
 
 
 @Controller('onboarding')
@@ -16,14 +17,16 @@ export class OnboardingController {
   @UseGuards(JwtAuthGuard)
   @Get()
   async getMyOnboarding(@Req() req: any) {
-    const userId = req.user.userId;
+    const userId = req.user.sub;
     return this.onboardingService.getOnboarding(userId);
   }
 
+
+  @ApiBearerAuth()
   @UseGuards(JwtAuthGuard)
-  @Post('save')   // ⭐ REQUIRED — Flutter usually calls /onboarding/save
+ @Post('save')
   async saveMyOnboarding(@Req() req: any, @Body() body: any) {
-    const userId = req.user.userId;
+    const userId = req.user.sub;
 
 
     // 1️⃣ Save onboarding data
