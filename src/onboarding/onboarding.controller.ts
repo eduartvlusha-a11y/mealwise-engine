@@ -17,7 +17,7 @@ export class OnboardingController {
   @UseGuards(JwtAuthGuard)
   @Get()
   async getMyOnboarding(@Req() req: any) {
-    const userId = req.user.sub;
+    const userId = req.user.userId;
     return this.onboardingService.getOnboarding(userId);
   }
 
@@ -26,7 +26,7 @@ export class OnboardingController {
   @UseGuards(JwtAuthGuard)
  @Post('save')
   async saveMyOnboarding(@Req() req: any, @Body() body: any) {
-    const userId = req.user.sub;
+    const userId = req.user.userId;
 
 
     // 1️⃣ Save onboarding data
