@@ -45,13 +45,23 @@ export class OnboardingController {
 
     console.log('🧩 ONBOARDING: saved. About to upsert profile. userId=', userId);
 
-const profile = await this.profileService.upsertProfileFromOnboarding(userId);
+// PROFILE UPSERT
+let profile = null;
 
-console.log('✅ PROFILE UPSERT DONE. profileId=', profile?.id);
+try {
+  profile = await this.profileService.upsertProfileFromOnboarding(userId);
+  console.log('✅ PROFILE UPSERT DONE. profileId=', profile?.id);
+} catch (e) {
+  console.log('❌ PROFILE ERROR:', e);
+}
 
-
-    // 2️⃣ Auto-run REAL MealWise pipeline (Option C)
-    await this.mealwiseService.initializeUserAfterOnboarding(userId);
+// MEALWISE INIT
+try {
+  await this.mealwiseService.initializeUserAfterOnboarding(userId);
+  console.log('✅ MEALWISE INIT DONE');
+} catch (e) {
+  console.log('❌ MEALWISE ERROR:', e);
+}
 
     // 3️⃣ Response to Flutter
     return { success: true };
