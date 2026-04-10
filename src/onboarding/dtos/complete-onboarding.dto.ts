@@ -1,15 +1,35 @@
-import { IsNumber, IsString, Min, Max } from 'class-validator';
+import { IsNumber, IsString, IsArray, IsOptional } from 'class-validator';
 
-export class CompleteOnboardingDto {
+export class OnboardingDto {
   @IsNumber()
-  @Min(1000)
-  @Max(5000)
-  dailyCalories: number;
+  age: number;
 
-  @IsNumber()
-  @Min(10)
-  budgetPerDay: number;
+  @IsString()
+  gender: string;
+
+  @IsString()
+  activityLevel: string;
 
   @IsString()
   goal: string;
+
+  @IsNumber()
+  height: number;
+
+  @IsNumber()
+  weight: number;
+
+  @IsArray()
+  @IsOptional()
+  dietaryPreferences: string[];
+
+  @IsArray()
+  @IsOptional()
+  allergies: string[];
+
+  @IsNumber()
+  budget: number;
+
+  @IsString()
+  country: string;
 }

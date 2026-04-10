@@ -4,6 +4,8 @@ import { JwtAuthGuard } from '../auth/guards/jwt.guard';
 import { MealwiseService } from '../mealwise/mealwise.service';
 import { ProfileService } from '../profile/profile.service';
 import { ApiBearerAuth } from '@nestjs/swagger';
+import { OnboardingDto } from './dtos/complete-onboarding.dto';
+import { ApiBody } from '@nestjs/swagger';
 
 
 @Controller('onboarding')
@@ -15,47 +17,56 @@ export class OnboardingController {
   ) {}
 
   @UseGuards(JwtAuthGuard)
-@Get()
-async getMyOnboarding(@Req() req: any) {
-  const userId = req.user.userId;
-  return this.onboardingService.getOnboarding(userId);
-}
-
-@ApiBearerAuth()
-@UseGuards(JwtAuthGuard)
-@Post('save')
-async saveMyOnboarding(@Req() req: any, @Body() body: any) {
-  const userId = req.user.userId;
-
-  await this.onboardingService.saveOnboarding(userId, {
-    age: body.age,
-    gender: body.gender,
-    activityLevel: body.activityLevel,
-    goal: body.goal,
-    height: body.height,
-    weight: body.weight,
-    dietaryPreferences: body.dietaryPreferences,
-    allergies: body.allergies,
-    budget: body.budget,
-    country: body.country,
-  });
-
-  console.log('🧩 ONBOARDING: saved. userId=', userId);
-
-  try {
-    const profile = await this.profileService.upsertProfileFromOnboarding(userId);
-    console.log('✅ PROFILE UPSERT DONE. profileId=', profile?.id);
-  } catch (e) {
-    console.log('❌ PROFILE ERROR:', e);
+  @Get()
+  async getMyOnboarding(@Req() req: any) {
+    const userId = req.user?.sub;
+    return this.onboardingService.getOnboarding(userId);
   }
 
-  try {
-    await this.mealwiseService.initializeUserAfterOnboarding(userId);
-    console.log('✅ MEALWISE INIT DONE');
-  } catch (e) {
-    console.log('❌ MEALWISE ERROR:', e);
-  }
 
-  return { success: true };
+  @ApiBearerAuth()
+  @UseGuards(JwtAuthGuard)
+  @ApiBody({ type: OnboardingDto })
+ @Post('save')
+  async saveMyOnboarding(@Req() req: any, @Body() body: OnboardingDto) {
+    const userId = req.user?.sub;
+
+
+    // 1️⃣ Save onboarding data
+    await this.onboardingService.saveOnboarding(userId, {
+      age: body.age,
+      gender: body.gender,
+      activityLevel: body.activityLevel,
+      goal: body.goal,
+      height: body.height,
+      weight: body.weight,
+      dietaryPreferences: body.dietaryPreferences,
+      allergies: body.allergies,
+      budget: body.budget,
+      country: body.country,
+    });
+
+    console.log('🧩 ONBOARDING: saved. About to upsert profile. userId=', userId);
+
+// PROFILE UPSERT
+let profile = null;
+
+try {
+  profile = await this.profileService.upsertProfileFromOnboarding(userId);
+  console.log('✅ PROFILE UPSERT DONE. profileId=', profile?.id);
+} catch (e) {
+  console.log('❌ PROFILE ERROR:', e);
 }
+
+// MEALWISE INIT
+try {
+  await this.mealwiseService.initializeUserAfterOnboarding(userId);
+  console.log('✅ MEALWISE INIT DONE');
+} catch (e) {
+  console.log('❌ MEALWISE ERROR:', e);
+}
+
+    // 3️⃣ Response to Flutter
+    return { success: true };
+  }
 }
