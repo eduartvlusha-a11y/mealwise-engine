@@ -19,7 +19,7 @@ export class OnboardingController {
   @UseGuards(JwtAuthGuard)
   @Get()
   async getMyOnboarding(@Req() req: any) {
-    const userId = req.user?.sub;
+    const userId = String(req.user?.sub);
     return this.onboardingService.getOnboarding(userId);
   }
 
@@ -29,7 +29,7 @@ export class OnboardingController {
   @ApiBody({ type: OnboardingDto })
  @Post('save')
   async saveMyOnboarding(@Req() req: any, @Body() body: OnboardingDto) {
-    const userId = req.user?.sub;
+    const userId = String(req.user?.sub);
 
 
     // 1️⃣ Save onboarding data
