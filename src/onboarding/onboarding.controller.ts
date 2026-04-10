@@ -30,6 +30,8 @@ export class OnboardingController {
  @Post('save')
   async saveMyOnboarding(@Req() req: any, @Body() body: OnboardingDto) {
     const userId = String(req.user?.sub);
+    console.log("🔥 TOKEN USER:", req.user);
+console.log("🔥 USER ID USED:", userId);
 
 
     // 1️⃣ Save onboarding data
