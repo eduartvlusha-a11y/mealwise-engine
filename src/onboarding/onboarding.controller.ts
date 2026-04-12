@@ -29,7 +29,11 @@ export class OnboardingController {
   @ApiBody({ type: OnboardingDto })
  @Post('save')
   async saveMyOnboarding(@Req() req: any, @Body() body: OnboardingDto) {
-    const userId = req.user?.userId;
+    const userId = req.user.userId;
+
+if (!userId) {
+  throw new Error("USER ID IS MISSING");
+}
     console.log("🔥 TOKEN USER:", req.user);
 console.log("🔥 USER ID USED:", userId);
 
